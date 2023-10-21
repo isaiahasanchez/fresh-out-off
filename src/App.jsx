@@ -39,9 +39,8 @@ export function App() {
 	return (
 		<Router>
 			<Routes>
-				<Route element={<Layout listToken={listToken} />}>
+				<Route path="/" element={<Layout listToken={listToken} />}>
 					<Route
-						path="/"
 						index
 						element={
 							// listToken ? (
