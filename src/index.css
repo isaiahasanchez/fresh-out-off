@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sanchez&display=swap'); */
-/* 
+
 :root {
 	--color-black: hsla(220, 13%, 18%, 1);
 	--color-gray-dark: hsla(220, 13%, 25%, 1);
@@ -52,7 +52,7 @@
 *::after,
 *::before {
 	box-sizing: border-box;
-} */
+}
 
 /**
  * Make sure the app fills the height of the screen.
