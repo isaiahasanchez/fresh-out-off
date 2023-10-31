@@ -162,7 +162,7 @@ select {
 	padding: 0.4rem;
 	font-size: 1em;
 }
-body {
+/* body {
 	background-image: url('/lemons-blk.png');
 	@media screen and (prefers-color-scheme: light) {
 		background-image: url('/lemons-wht.png');
@@ -170,9 +170,9 @@ body {
 
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed; /* Optional: Keep the background fixed */
+	background-attachment: fixed;
 	background-position: center center;
-}
+} */
 
 form {
 	display: flex;
