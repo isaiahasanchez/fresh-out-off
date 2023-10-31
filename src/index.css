@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sanchez&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sanchez&display=swap'); */
+/* 
 :root {
 	--color-black: hsla(220, 13%, 18%, 1);
 	--color-gray-dark: hsla(220, 13%, 25%, 1);
@@ -23,7 +23,6 @@
 
 	--shadow-hsl-vals: 18, 50%, 5%;
 
-	/* Isaiah added delete root color vars*/
 	--delete-color: hsl(0, 100%, 51%);
 	--delete-hover-color: hsl(8, 90%, 67%);
 }
@@ -37,7 +36,6 @@
 
 		--contrast-hsl-vals: 60, 90%, 50%;
 		--shadow-hsl-vals: 60, 50%, 5%;
-		/* Isaiah added css for delete button*/
 		--delete-color: hsl(0, 95%, 69%);
 		--delete-hover-color: hsl(8, 90%, 76%);
 	}
@@ -54,7 +52,7 @@
 *::after,
 *::before {
 	box-sizing: border-box;
-}
+} */
 
 /**
  * Make sure the app fills the height of the screen.
