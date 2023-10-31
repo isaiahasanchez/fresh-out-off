@@ -2,9 +2,12 @@
 
 This README file explains The Collab Lab’s smart shopping list project and provides instructions for developing it locally.
 
-## Live Site Link
+## Live Site Link For Isaiah Sanchez's Collab Lab Group TCL 65 
 
-[https://freshoutoff.netlify.app/](https://freshoutoff.netlify.app/)
+Click here to be directed to the Live Site [https://freshoutoff.netlify.app/](https://freshoutoff.netlify.app/)
+
+<img width="1490" alt="Screenshot 2023-10-30 at 7 55 19 PM" src="https://github.com/isaiahasanchez/fresh-out-off/assets/124002003/974e100f-10e4-4d78-a18d-46064b544c69">
+
 
 ## What is this project?
 
