@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -6,21 +7,12 @@ import {
 } from 'react-router-dom';
 
 import { AddItem, Home, Layout, List } from './views';
-
 import { useShoppingListData } from './api';
-
 import { useStateWithStorage } from './utils';
-
 import { generateToken } from '@the-collab-lab/shopping-list-utils';
 
 export function App() {
-	/**
-	 * This custom hook takes a token pointing to a shopping list
-	 * in our database and syncs it with localStorage for later use.
-	 * Check ./utils/hooks.js for its implementation.
-	 *
-	 * Use `setListToken` to allow a user to create and join a new list.
-	 */
+	const [isLoading, setIsLoading] = useState(true);
 	const [listToken, setListToken] = useStateWithStorage(
 		'tcl-shopping-list-token',
 		null,
@@ -30,11 +22,27 @@ export function App() {
 		setListToken(generateToken());
 	};
 
-	/**
-	 * This custom hook takes our token and fetches the data for our list.
-	 * Check ./api/firestore.js for its implementation.
-	 */
 	const data = useShoppingListData(listToken);
+
+	useEffect(() => {
+		// Assuming the token retrieval is asynchronous and can be awaited
+		const initializeApp = async () => {
+			try {
+				// Simulate an asynchronous operation if needed
+				await new Promise((resolve) => setTimeout(resolve, 1000)); // Optional delay for demonstration
+			} catch (error) {
+				console.error('Error during initialization:', error);
+			} finally {
+				setIsLoading(false);
+			}
+		};
+
+		initializeApp();
+	}, []);
+
+	if (isLoading) {
+		return <div>Loading...</div>; // Placeholder for a loading indicator
+	}
 
 	return (
 		<Router>
@@ -43,15 +51,11 @@ export function App() {
 					<Route
 						index
 						element={
-							// listToken ? (
-							// 	<Navigate to="/list" />
-							// ) : (
 							<Home
 								listToken={listToken}
 								setListToken={setListToken}
 								handleNewToken={handleNewToken}
 							/>
-							// )
 						}
 					/>
 					<Route
