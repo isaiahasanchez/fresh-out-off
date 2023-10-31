@@ -2,7 +2,9 @@
 
 This README file explains The Collab Lab’s smart shopping list project and provides instructions for developing it locally.
 
-If you’re a Collab Lab developer, WELCOME! We’re so excited to work with you and collaborate on something amazing. Be sure to read [the setup instructions](#set-up-the-project) and then [make your first contribution](#make-your-first-contribution)! For additional details on how your cohort will operate, please check out the [project brief](PROJECT-BRIEF.md).
+## Live Site Link
+
+[https://freshoutoff.netlify.app/](https://freshoutoff.netlify.app/)
 
 ## What is this project?
 
