@@ -163,10 +163,10 @@ select {
 	font-size: 1em;
 }
 body {
-	/* background-image: url('/lemons-blk.png');
+	background-image: url('/lemons-blk.png');
 	@media screen and (prefers-color-scheme: light) {
 		background-image: url('/lemons-wht.png');
-	} */
+	}
 
 	background-size: cover;
 	background-repeat: no-repeat;
