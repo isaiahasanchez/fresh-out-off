@@ -1,16 +1,4 @@
-@font-face {
-	font-family: 'Pacifico';
-	src: url('fonts/Pacifico-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Sanchez';
-	src: url('fonts/Sanchez-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sanchez&display=swap');
 :root {
 	--color-black: hsla(220, 13%, 18%, 1);
 	--color-gray-dark: hsla(220, 13%, 25%, 1);
