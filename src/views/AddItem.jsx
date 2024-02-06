@@ -1,7 +1,6 @@
 import './AddItem.css';
 import React, { useState } from 'react';
 import { addItem } from '../api/firebase';
-import './AddItem.css';
 
 export function AddItem({ listToken, data }) {
 	const [itemName, setItemName] = useState('');
